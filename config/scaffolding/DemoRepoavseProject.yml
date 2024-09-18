@@ -19,6 +19,14 @@ services:
   packages:
   - name: DemoRepoavseProject
     version: "1.0"
+- serviceName: project.demorepoavse.integrations:getUserDetailsFromDB
+  packages:
+  - name: DemoRepoavseProject
+    version: "1.0"
+- serviceName: project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:getUserDetails
+  packages:
+  - name: DemoRepoavseProject
+    version: "1.0"
 configurationVariables:
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
   : "true"
@@ -91,7 +99,7 @@ configurationVariables:
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
   : postgres
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
-  : "false"
+  : "true"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
