@@ -8,4 +8,8 @@
 <INVOKE NAME="DemoAssets" SERVICE="DemoAssets:getUserDetailsFromDB">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<INVOKE NAME="DemoAssets" SERVICE="DemoAssets:getUserDetailsFromDB">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>
