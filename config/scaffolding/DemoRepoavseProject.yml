@@ -10,6 +10,11 @@ packages:
 - name: WmJDBCAdapter
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
+- name: WmTNMigration
+  gitServerName: SelviGitHub
+  gitUrl: https://github.com/AvudaiSelvi
+  gitUsername: AvudaiSelvi
+  gitBranch: main
 services:
 - serviceName: project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
@@ -28,95 +33,95 @@ services:
   - name: DemoRepoavseProject
     version: "1.0"
 configurationVariables:
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "true"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
-  : ""
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : POSTGRESQL
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
-  : mydbinstance.cxounmjc084y.us-east-1.rds.amazonaws.com
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
-  : ""
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
-  : "5432"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}QtRsXYLMlRx6MUIhITGFDg=="
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
-  : postgres
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
-  : ""
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : org.postgresql.ds.PGSimpleDataSource
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolable
-  : "true"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
-  : "{AES}QtRsXYLMlRx6MUIhITGFDg=="
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.portNumber
-  : "5432"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.networkProtocol
   : ""
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.databaseName
   : initial_db
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "5432"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : mydbinstance.cxounmjc084y.us-east-1.rds.amazonaws.com
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
-  : POSTGRESQL
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : loginTimeout=60;
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : inital_db
-  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
-  : postgres
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
   : "true"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}QtRsXYLMlRx6MUIhITGFDg=="
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
+  : POSTGRESQL
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : postgres
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
+  : ""
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
+  : ""
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
   : loginTimeout=60;
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : POSTGRESQL
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.heartBeatInterval
   : "0"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.driverType
   : postgresDriver
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
+  : mydbinstance.cxounmjc084y.us-east-1.rds.amazonaws.com
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.blockingTimeout
+  : "1000"
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.datasourceClass
+  : org.postgresql.ds.PGSimpleDataSource
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
   : org.postgresql.ds.PGSimpleDataSource
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : postgresDriver
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : inital_db
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
+  : "{AES}QtRsXYLMlRx6MUIhITGFDg=="
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.portNumber
+  : "5432"
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
+  : postgres
+  ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
   ? artConnection.DemoRepoavseProject.project.demorepoavse.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
   : "0"
