@@ -7,17 +7,19 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="WmTNMigration">1.0</value>
+  </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">15</value>
+  <value name="build">19</value>
   <null name="description"/>
   <value name="created_date">18-09-2024 03:36:12 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2024-09-18T03:41:27.127015996Z</value>
+  <value name="lastUpdated">2024-09-18T03:55:43.086669118Z</value>
   <value name="wmProjectId">flbe1ad3261e8318a2e273c8</value>
   <value name="creator">AvudaiSelvi S</value>
 </Values>
